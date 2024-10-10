@@ -2,7 +2,8 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("💬 Chatbot")
+# HTML을 사용하여 제목 가운데 정렬
+st.markdown("<h1 style='text-align: center;'>What is your tasty?</h1>", unsafe_allow_html=True)
 st.write(
     "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
     "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
